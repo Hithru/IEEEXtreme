@@ -20,3 +20,12 @@ for k in range(num_words):
 
 print(maximum)
 
+# Sample Input:-
+
+# 6
+# cats
+# caller
+# dogs
+# cellar
+# parrots
+# recall
