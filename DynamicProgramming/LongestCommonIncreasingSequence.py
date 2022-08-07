@@ -1,5 +1,5 @@
 # Book : 7 Days with Dynamic Programming
-# Problem : Longest Increasing Subsequence
+# Problem : Longest Common Increasing Subsequence
 
 # Sequence1 : 2, 6, 4, 9
 # Sequence2 : 3, 4, 2, 7, 9, 6
