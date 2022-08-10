@@ -1,5 +1,5 @@
 # Challenge Name: Encryption
-# Difficulty: Easy
+# Difficulty: Intermediate
 
 def encryption(s):
     modified_string = s.replace(" ", "")
