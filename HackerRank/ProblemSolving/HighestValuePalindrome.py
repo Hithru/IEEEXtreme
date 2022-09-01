@@ -17,7 +17,7 @@ def highest_value_palindrome(string: str, n: int, k: int):
 
     changes_left = k - len(must_changes)
     print("changes left", changes_left)
-    while changes_left > 1:
+    if changes_left > 1:
         for i in range(n // 2):
             if string[i] != "9":
                 list_string[i] = "9"
@@ -33,11 +33,10 @@ def highest_value_palindrome(string: str, n: int, k: int):
             if changes_left <= 1:
                 break
     for tup in must_changes:
-        if changes_left >= 1:
+        value = max(int(tup[1]), int(tup[2]))
+        if changes_left >= 1 and value != 9:
             value = 9
             changes_left -= 1
-        else:
-            value = max(int(tup[1]), int(tup[2]))
         list_string[tup[0]] = str(value)
         list_string[-(tup[0] + 1)] = str(value)
 
