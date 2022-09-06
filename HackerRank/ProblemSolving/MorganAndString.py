@@ -1,34 +1,34 @@
 # Challenge Name: Morgan And String
 # Difficulty: Expert
 
-def morgan_and_string(str1: str, str2: str):
+def morgan_and_string(string1: str, string2: str):
     i = 0
     j = 0
+    length_string1 = len(string1)
+    length_string2 = len(string2)
+    string1 = string1 + "z"
+    string2 = string2 + "z"
     answer = ""
     while True:
-        if i == len(str1):
-            answer += str2[j:]
+        if i == length_string1:
+            answer += string2[j:-1:]
             break
-        if j == len(str2):
-            answer += str1[i:]
+        if j == length_string2:
+            answer += string1[i:-1:]
             break
-        if str1[i] < str2[j]:
-            answer += str1[i]
+        if string1[i] < string2[j]:
+            answer += string1[i]
             i += 1
-        elif str2[j] < str1[i]:
-            answer += str2[j]
+        elif string2[j] < string1[i]:
+            answer += string2[j]
             j += 1
-        elif str1[i] == str2[j]:
-            k = 0
-            first_string = True
-            while i + k < len(str1) and j + k < len(str2) and str1[i + k] == str2[j + k]:
-                k += 1
+        elif string1[i] == string2[j]:
 
-            if i + k == len(str1) or j + k == len(str2) or str1[i + k] <= str2[j + k]:
-                answer += str1[i]
+            if string1[i::] < string2[j::]:
+                answer += string1[i]
                 i += 1
             else:
-                answer += str2[j]
+                answer += string2[j]
                 j += 1
     return answer
 
