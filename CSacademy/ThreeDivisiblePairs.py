@@ -1,10 +1,11 @@
 # Challenge Name: 3-divisible Pairs
 # Time limit: 2000 ms
 # Memory limit: 128 MB
-
+# Contest: (Out of Beta) Round #9
+# Difficulty: Medium
 
 N = input()
-numbers = [int(i) for i in input().split(" ")]
+numbers = list(map(int,input().strip().split(' ')))
 
 answer = 0
 difference_one = 0
