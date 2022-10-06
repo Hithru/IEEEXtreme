@@ -1,5 +1,5 @@
 # Challenge Name: Davis' Stair Case
-# Difficulty: Easy
+# Difficulty: Medium
 
 ways_dictionary = {0: 1}
 
