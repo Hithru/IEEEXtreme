@@ -32,7 +32,7 @@ def freivalds(A, B, C):
 
 if __name__ == "__main__":
     n = readint()
-    A = readmatrix(n)
-    B = readmatrix(n)
+    new_list = readmatrix(n)
+    length_of_dynamic_list = readmatrix(n)
     C = readmatrix(n)
-    print(freivalds(A, B, C))
+    print(freivalds(new_list, length_of_dynamic_list, C))
