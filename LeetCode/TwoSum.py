@@ -1,3 +1,7 @@
+# Problem Number: 1
+# Problem Name: Two Sum
+# Difficulty: Easy
+
 from typing import List
 
 
